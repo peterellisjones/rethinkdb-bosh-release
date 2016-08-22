@@ -6,6 +6,7 @@ set -x
 
 JOB_NAME=rethinkdb
 RUN_DIR=/var/vcap/sys/run/${JOB_NAME}
+DATA_DIR=/var/vcap/store/${JOB_NAME}
 LOG_DIR=/var/vcap/sys/log/${JOB_NAME}
 PIDFILE=${RUN_DIR}/pid
 PACKAGE_DIR=/var/vcap/jobs/${JOB_NAME}/packages
@@ -19,7 +20,7 @@ case $1 in
     pid_guard $PIDFILE $JOB_NAME
 
     mkdir -p $RUN_DIR
-    mkdir -p $RUN_DIR/data
+    mkdir -p $DATA_DIR
     mkdir -p $LOG_DIR
 
     chown -R vcap:vcap $RUN_DIR

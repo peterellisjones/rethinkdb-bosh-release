@@ -20,6 +20,7 @@ instance_groups:
   - name: rethinkdb
     instances: 3
     resource_pool: default
+    persistent_disk: 1_024
     networks:
       - name: default
         static_ips:

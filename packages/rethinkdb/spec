@@ -1,0 +1,8 @@
+---
+name: rethinkdb
+
+dependencies:
+  - python
+
+files:
+  - rethinkdb-2.3.4.tgz

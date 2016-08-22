@@ -1,0 +1,9 @@
+---
+rethinkdb-2.3.4.tgz:
+  object_id: 7f0379fc-35b9-4466-b7bb-c975ab41512a
+  sha: 3c734305e31a14aa52ff28ca03c7840d91a62f89
+  size: 76811758
+Python-2.7.12.tgz:
+  object_id: 62f1d4bb-b727-4c81-a8cf-d82501b853e1
+  sha: 1e80b781eacc6b7e243bd277e5002426aa56d0f1
+  size: 16935960

@@ -1,0 +1,17 @@
+set -e
+set -u
+set -x
+
+export PATH=/var/vcap/packages/python/bin:$PATH
+export PYTHON=/var/vcap/packages/python/bin/python
+
+tar xf rethinkdb-2.3.4.tgz
+
+CPUS=`grep -c ^processor /proc/cpuinfo`
+
+echo "Building rethinkdb..."
+pushd rethinkdb-2.3.4
+  ./configure --allow-fetch --prefix=${BOSH_INSTALL_TARGET}
+  make -j${CPUS}
+  make install
+popd

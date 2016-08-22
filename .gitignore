@@ -1,0 +1,7 @@
+tmp/*
+dev_releases
+.blobs
+.dev_builds
+config/dev.yml
+config/private.yml
+blobs/*

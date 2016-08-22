@@ -1,0 +1,22 @@
+---
+packages:
+- name: python
+  version: 04f833f786cfa558ebaacddf98aff7eb7b1e4f68
+  fingerprint: 04f833f786cfa558ebaacddf98aff7eb7b1e4f68
+  sha1: 2a9fef0f3a1d5575f5efd1475d1314e88d295cf9
+  dependencies: []
+- name: rethinkdb
+  version: b09085357a4be3069cd77b71d4165ecaff02cc50
+  fingerprint: b09085357a4be3069cd77b71d4165ecaff02cc50
+  sha1: 6b6aa0bbc118c3fc3186119b03ac0da289c62b2f
+  dependencies:
+  - python
+jobs:
+- name: rethinkdb
+  version: 8ec3ce433506a79e5b1da71ee0362a0fa13eb377
+  fingerprint: 8ec3ce433506a79e5b1da71ee0362a0fa13eb377
+  sha1: 82a76e0834f05748ce367db1cc262cbd98d3c0f2
+commit_hash: a8a4e073
+uncommitted_changes: true
+name: rethinkdb
+version: '1'

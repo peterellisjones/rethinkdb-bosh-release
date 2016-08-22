@@ -1,0 +1,7 @@
+---
+name: python
+
+dependencies: []
+
+files:
+  - Python-2.7.12.tgz
